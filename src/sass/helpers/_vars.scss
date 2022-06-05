@@ -1,0 +1,21 @@
+:root {
+    --color-primary: #FDC800;
+    --color-secondary: #002147;
+    --color-text: #212529;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #757575;
+    --bg-color-base: #F0F4F9;
+    --font-size-base: .8rem;
+    --font-family-base: 'Roboto', sans-serif;
+}
+
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-text: var(--color-text);
+$color-white: var(--color-white);
+$color-black: var(--color-black);
+$color-gray: var(--color-gray);
+$bg-color-base :var(--bg-color-base);
+$font-size-base: var(--font-size-base);
+$font-family-base: var(--font-family-base);

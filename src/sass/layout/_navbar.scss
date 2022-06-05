@@ -1,0 +1,34 @@
+// Start Upper Navbar
+.upper-navbar {
+    background-color: $color-primary;
+
+    .link-address {
+        color: $color-secondary;
+    }
+
+    // Links
+    .list-sochail {
+        gap: 10px;
+
+        &__item {
+            &__link {
+                color: $color-secondary;
+                font-size: 1.3rem;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+// End Upper Navabar
+
+// Strat Navbar 
+.main-navbar {
+    background-color: $bg-color-base;
+
+    .nav-link {
+        color: $color-secondary  !important;
+        font-weight: 500;
+
+    }
+}

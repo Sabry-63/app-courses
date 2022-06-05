@@ -1,0 +1,21 @@
+@import './helpers/vars';
+@import './helpers/reset';
+@import './helpers/base';
+
+@import './components/buttons';
+
+@import './layout/navbar';
+@import './layout/header';
+@import './layout/footer';
+
+@import './page/home';
+@import './page/courese';
+@import './page/courseDetail';
+@import './page/price';
+@import './page/contact';
+
+
+
+
+// font-family: 'Cairo', sans-serif;
+// font-family: 'Spline Sans Mono', monospace;

@@ -1,0 +1,26 @@
+.page-pirce {
+    background-color: $bg-color-base;
+
+    .card {
+        .card-head {
+            position: relative;
+
+            .card-title {
+                top: 0;
+                background-color: $color-secondary;
+                color: $color-white;
+                padding: 10px 25px;
+                display: inline-block;
+                min-width: max-content;
+                text-transform: uppercase;
+
+            }
+        }
+
+        .card-body {
+            &__price {
+                font-size: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,241 @@
+.tiem-section {
+    background-color: $color-secondary;
+    padding: 25px 35px;
+    border-radius: 12px;
+    position: relative;
+    top: -100px;
+
+
+
+    &__info {
+        img {
+            height: 150px;
+        }
+
+        h2 {
+            color: $color-white;
+            margin: 0 30px;
+            font-size: 3rem;
+
+            @media(max-width:992px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__timer {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: end;
+
+        @media(max-width:992px) {
+            gap: 20px;
+            justify-content: center;
+
+        }
+
+        &__box {
+            position: relative;
+
+
+
+            &:not(:last-child) {
+
+                &::after {
+                    content: ":";
+                    position: absolute;
+                    right: -25px;
+                    top: 50%;
+                    font-size: 1.8rem;
+                    transform: translateY(-50%);
+
+                    @media(max-width:992px) {
+                        font-size: 1.2rem;
+                        right: -10px;
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 3rem;
+                color: $color-white;
+
+                @media(max-width:992px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            span {
+                @media(max-width:992px) {
+                    font-size: .8rem;
+
+                }
+            }
+        }
+    }
+}
+
+[dir=rtl] {
+    .tiem-section {
+        &__timer {
+            &__box {
+                &:not(:last-child) {
+                    &::before {
+                        content: ":";
+                        position: absolute;
+                        left: -25px;
+                        top: 50%;
+                        font-size: 1.8rem;
+                        transform: translateY(-50%);
+
+                        @media(max-width:992px) {
+                            font-size: 1.2rem;
+                            left: -10px;
+                        }
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.item-cuorses {
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 #ccc;
+    overflow: hidden;
+    height: 100%;
+
+    &__info {
+        position: relative;
+        padding: 45px 20px 20px 20px;
+
+        &__img {
+            position: absolute;
+            height: 60px;
+            top: -30px;
+        }
+
+        &__title {
+            color: $color-secondary;
+        }
+
+        &__sub-title {
+            color: $color-gray;
+        }
+    }
+}
+
+.section-successful {
+    &__info {
+        position: relative;
+
+        &__icon {
+            position: absolute;
+            left: -34px;
+            top: -34px;
+            height: 135px;
+
+            @media(max-width:992px) {
+                left: -10px;
+
+            }
+        }
+
+        &__box {
+            position: relative;
+            top: -50px;
+            background-color: $color-white;
+            padding: 20px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 0 0 5px 0 rgba(#000000, .2);
+            border-radius: 6px;
+
+            span {
+                color: $color-gray;
+            }
+        }
+    }
+
+    &__text {
+        h2 {
+            font-size: 4rem;
+
+            @media(max-width:992px) {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            color: $color-secondary;
+            line-height: 1.7;
+        }
+    }
+
+    &__box {
+        background-color: $bg-color-base;
+        border-radius: 8px;
+        margin-left: 30px;
+        padding: 25px 40px;
+        position: relative;
+
+        @media(max-width:992px) {
+            font-size: .8rem;
+        }
+
+        h5 {
+
+            @media(max-width:992px) {
+                font-size: 1rem;
+            }
+        }
+
+        @media(max-width:992px) {
+            padding: 10px 10px 10px 25px;
+
+
+        }
+
+        img {
+            position: absolute;
+            left: -40px;
+            width: 80px;
+
+            @media(max-width:992px) {
+                left: -30px;
+                width: 60px;
+
+            }
+        }
+    }
+}
+
+.cuonter {
+    background-color: $bg-color-base;
+    background-image: url('/../public/content/assets/counter/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 100px 0;
+
+    &__item {
+        &__img {
+            width: 200px;
+            height: 200px;
+        }
+
+        &__cuont {
+            color: $color-secondary;
+            font-size: 3.5rem;
+        }
+
+        &__title {
+            color: #00B2B2;
+        }
+    }
+}

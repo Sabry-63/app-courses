@@ -1,0 +1,31 @@
+.header-page {
+    background-color: $bg-color-base;
+    padding-bottom: 180px;
+
+    &__info {
+        &__sub-title {
+            font-size: 2rem;
+            color: $color-secondary;
+
+            @media(max-width:992px) {
+                font-size: 1rem;
+
+            }
+        }
+
+        &__title {
+            font-size: 3.5rem;
+            color: $color-secondary;
+
+            @media(max-width:992px) {
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+
+    &__img {
+        height: 380px;
+        text-align: end;
+    }
+}
