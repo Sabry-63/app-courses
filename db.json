@@ -9,7 +9,8 @@
         {
             "id": 2,
             "img": "2.png",
-            "subImg": "sub-1.png"
+            "subImg": "sub-1.png",
+            "category": "Mobile"
         },
         {
             "id": 3,

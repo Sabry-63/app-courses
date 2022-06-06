@@ -48,7 +48,7 @@ export default function Courses() {
             </Helmet>
             <section className="courese-page ">
                 <div className="courese-page__header pt-5">
-                    <div className="container">
+                    {/* <div className="container">
                         <span className="main-color fw-bold">
                             Course category
                         </span>
@@ -56,28 +56,45 @@ export default function Courses() {
                         <div className="courese-page__header__fillter my-5">
                             <FliterCoures />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="container">
                     <div className="courese-page__content">
-                        {errorData ? (
-                            <div className="alert alert-danger">
-                                {errorData.message}
+                        <div className="row">
+                            <div className="col-md-3 mb-3 mb-md-0">
+                                <div className="shadow p-4">
+                                    <h5 className="border-bottom mb-3 pb-3">
+                                        Course category
+                                    </h5>
+                                    <FliterCoures
+                                        setCoures={setCoures}
+                                        setPage={setPage}
+                                        page={page}
+                                        setTotal={setTotal}
+                                    />
+                                </div>
                             </div>
-                        ) : loadingData ? (
-                            <LoadingCourse />
-                        ) : (
-                            <>
-                                <ItemCuores items={coures} />
-                            </>
-                        )}
-                        <Pagination
-                            defaultCurrent={page}
-                            total={total}
-                            onChange={(page) => setPage(page)}
-                            current={page}
-                            pageSize={9}
-                        />
+                            <div className="col-md-9">
+                                {errorData ? (
+                                    <div className="alert alert-danger">
+                                        {errorData.message}
+                                    </div>
+                                ) : loadingData ? (
+                                    <LoadingCourse />
+                                ) : (
+                                    <>
+                                        <ItemCuores items={coures} />
+                                    </>
+                                )}
+                                <Pagination
+                                    defaultCurrent={page}
+                                    total={total}
+                                    onChange={(page) => setPage(page)}
+                                    current={page}
+                                    pageSize={9}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

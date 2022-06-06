@@ -39,3 +39,14 @@ input:focus {
 a {
     text-decoration: none;
 }
+
+// AntD
+.ant-radio-checked .ant-radio-inner,
+.ant-radio-checked:after {
+    border-color: $color-primary  !important;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+    background-color: $color-primary  !important;
+
+}
