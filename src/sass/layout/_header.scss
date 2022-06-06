@@ -28,4 +28,11 @@
         height: 380px;
         text-align: end;
     }
+
+    button {
+        @media(max-width:992px) {
+            display: block;
+
+        }
+    }
 }

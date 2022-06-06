@@ -16,6 +16,7 @@ export default function Courses() {
     const [total, setTotal] = useState(null);
 
     useEffect(() => {
+        window.scrollTo({ top: 0 });
         axios
             .get('/coures', {
                 params: {

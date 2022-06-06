@@ -3,7 +3,8 @@
         {
             "id": 1,
             "img": "1.png",
-            "subImg": "sub-2.png"
+            "subImg": "sub-2.png",
+            "category": "UI/UX"
         },
         {
             "id": 2,
@@ -13,92 +14,110 @@
         {
             "id": 3,
             "img": "3.png",
-            "subImg": "sub-3.png"
+            "subImg": "sub-3.png",
+            "category": "UI/UX"
         },
         {
             "id": 4,
             "img": "4.png",
-            "subImg": "sub-2.png"
+            "subImg": "sub-2.png",
+            "category": "Design"
         },
         {
             "id": 5,
             "img": "5.png",
-            "subImg": "sub-3.png"
+            "subImg": "sub-3.png",
+            "category": "Design"
         },
         {
             "id": 6,
             "img": "6.png",
-            "subImg": "sub-1.png"
+            "subImg": "sub-1.png",
+            "category": "Mobile"
         },
         {
             "id": 7,
             "img": "7.png",
-            "subImg": "sub-2.png"
+            "subImg": "sub-2.png",
+            "category": "Web Development"
         },
         {
             "id": 8,
             "img": "8.png",
-            "subImg": "sub-2.png"
+            "subImg": "sub-2.png",
+            "category": "UI/UX"
         },
         {
             "id": 9,
             "img": "9.png",
-            "subImg": "sub-3.png"
+            "subImg": "sub-3.png",
+            "category": "Design"
         },
         {
             "id": 10,
             "img": "1.png",
-            "subImg": "sub-2.png"
+            "subImg": "sub-2.png",
+            "category": "Web Development"
         },
         {
             "id": 11,
             "img": "2.png",
-            "subImg": "sub-1.png"
+            "subImg": "sub-1.png",
+            "category": "UI/UX"
         },
         {
             "id": 12,
             "img": "2.png",
-            "subImg": "sub-1.png"
+            "subImg": "sub-1.png",
+            "category": "Mobile"
         },
         {
             "id": 13,
             "img": "3.png",
-            "subImg": "sub-3.png"
+            "subImg": "sub-3.png",
+            "category": "Web Development"
         },
         {
             "id": 14,
             "img": "4.png",
-            "subImg": "sub-2.png"
+            "subImg": "sub-2.png",
+            "category": "UI/UX"
         },
         {
             "id": 15,
             "img": "5.png",
-            "subImg": "sub-3.png"
+            "subImg": "sub-3.png",
+            "category": "Design"
         },
         {
             "id": 16,
             "img": "6.png",
-            "subImg": "sub-1.png"
+            "subImg": "sub-1.png",
+            "category": "Web Development"
         },
         {
             "id": 17,
             "img": "7.png",
-            "subImg": "sub-2.png"
+            "subImg": "sub-2.png",
+            "category": "Design"
         },
         {
             "id": 18,
             "img": "8.png",
-            "subImg": "sub-2.png"
+            "subImg": "sub-2.png",
+            "category": "Mobile"
         },
         {
             "id": 19,
             "img": "9.png",
-            "subImg": "sub-3.png"
+            "subImg": "sub-3.png",
+            "category": "Web Development"
         },
         {
             "id": 20,
             "img": "9.png",
-            "subImg": "sub-3.png"
+            "subImg": "sub-3.png",
+            "category": "Design"
         }
     ],
     "priceList": [
@@ -146,6 +165,14 @@
                 },
                 { "isAvailable": true, "point": "Private sessions" }
             ]
+        }
+    ],
+    "language": [
+        {
+            "English": "English"
+        },
+        {
+            "Arabic": "Arabic"
         }
     ]
 }
