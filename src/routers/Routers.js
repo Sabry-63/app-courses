@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 // Pages
 import Home from '../page/Home/Home';
 import Contact from './../page/Contact/Contact';
-import SignUp from './../page/SignUp/SignUp';
 import Courses from './../page/Courses/Courses';
 import CourseDetail from './../page/CourseDetail/CourseDetail';
 import Price from './../page/Price/Price';
@@ -49,13 +48,6 @@ export default function Routers() {
                     />
                 )
             )}
-            {['/SignUp', '/en/SignUp', '/ar/SignUp'].map((path) => (
-                <Route
-                    key="SignUp" // optional: avoid full re-renders on route changes
-                    path={path}
-                    element={<SignUp />}
-                />
-            ))}
         </Routes>
     );
 }

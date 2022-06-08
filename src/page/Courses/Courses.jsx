@@ -62,7 +62,7 @@ export default function Courses() {
                     <div className="courese-page__content">
                         <div className="row">
                             <div className="col-md-3 mb-3 mb-md-0">
-                                <div className="shadow p-4">
+                                <div className="shadow p-4  bg-white rounded-3">
                                     <h5 className="border-bottom mb-3 pb-3">
                                         Course category
                                     </h5>

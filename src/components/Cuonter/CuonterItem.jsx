@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 export default function CuonterItem({ counters }) {
+    const [viewPortEntered, setViewPortEntered] = useState(false);
+
     return (
         <div className="row">
             {counters.map((counter) => {
@@ -16,11 +18,16 @@ export default function CuonterItem({ counters }) {
                             />
 
                             <CountUp end={counter.cuont} redraw={true}>
-                                {({ countUpRef, start }) => (
+                                {({ countUpRef }) => (
                                     <VisibilitySensor
-                                        onChange={start}
-                                        delayedCall
                                         offset={{ top: -100 }}
+                                        active={!viewPortEntered}
+                                        onChange={(isVisible) => {
+                                            if (isVisible) {
+                                                setViewPortEntered(true);
+                                            }
+                                        }}
+                                        delayedCall
                                     >
                                         <h5
                                             ref={countUpRef}

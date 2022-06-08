@@ -2,6 +2,7 @@
 .upper-navbar {
     background-color: $color-primary;
 
+
     .link-address {
         color: $color-secondary;
     }
@@ -25,6 +26,9 @@
 // Strat Navbar 
 .main-navbar {
     background-color: $bg-color-base;
+    position: sticky;
+    top: -8px;
+    z-index: 3;
 
     .nav-link {
         color: $color-secondary  !important;

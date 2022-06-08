@@ -93,23 +93,12 @@ export default function AppNavbar() {
                                 Contact
                             </Link>
 
-                            <Link
-                                to={
-                                    lang === 'en'
-                                        ? '/SignUp'
-                                        : `/${lang}/SignUp`
-                                }
-                                className="nav-link"
-                            >
-                                Sign up
-                            </Link>
-
-                            <Link to={'#'} className="nav-link">
+                            {/* <Link to={'#'} className="nav-link">
                                 <i
                                     className="fa fa-search"
                                     aria-hidden="true"
                                 ></i>
-                            </Link>
+                            </Link> */}
 
                             <Dropdown overlay={menu} placement="bottom" arrow>
                                 <span className="text-uppercase nav-link">

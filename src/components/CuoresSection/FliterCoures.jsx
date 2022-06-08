@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Checkbox, Radio } from 'antd';
+import { Radio } from 'antd';
 import axios from 'axios';
 
 export default function FliterCoures({ setCoures, setPage, page, setTotal }) {
@@ -27,11 +27,11 @@ export default function FliterCoures({ setCoures, setPage, page, setTotal }) {
     }, [checked, page]);
 
     return (
-        <Radio.Group>
+        <Radio.Group defaultValue="">
             <Radio
                 value=""
                 onChange={(e) => setChecked(e.target.value)}
-                defaultChecked
+                checked
             >
                 All
             </Radio>
