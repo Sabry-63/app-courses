@@ -13,13 +13,13 @@ export default function ItemCuores({ items }) {
                             replace
                         >
                             <img
-                                src={`content/assets/cuoreses/${item.img}`}
+                                src={`/content/assets/cuoreses/${item.img}`}
                                 alt={item.title}
                                 className="w-100"
                             />
                             <div className="item-cuorses__info ">
                                 <img
-                                    src={`content/assets/cuoreses/${item.subImg}`}
+                                    src={`/content/assets/cuoreses/${item.subImg}`}
                                     alt={item.id}
                                     className="item-cuorses__info__img"
                                 />
