@@ -6,6 +6,7 @@ import { ScrollToTop } from '../../components/ScrollToTop/ScrollToTop';
 import LoadingCourse from './../../components/LoadingSkeleton/LoadingCourse';
 import { Pagination } from 'antd';
 import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 export default function Courses() {
     ScrollToTop();
@@ -14,6 +15,7 @@ export default function Courses() {
     const [errorData, setErrorData] = useState(null);
     const [page, setPage] = useState(1);
     const [total, setTotal] = useState(null);
+    const { lang } = useSelector((state) => state.lang);
 
     useEffect(() => {
         window.scrollTo({ top: 0 });
@@ -92,6 +94,36 @@ export default function Courses() {
                                     onChange={(page) => setPage(page)}
                                     current={page}
                                     pageSize={9}
+                                    responsive={true}
+                                    itemRender={(
+                                        page,
+                                        type,
+                                        originalElement
+                                    ) => {
+                                        if (type === 'prev') {
+                                            return (
+                                                <span>
+                                                    {lang === 'en' ? (
+                                                        <i className="fa fa-angle-left    "></i>
+                                                    ) : (
+                                                        <i className="fa fa-angle-right    "></i>
+                                                    )}
+                                                </span>
+                                            );
+                                        }
+                                        if (type === 'next') {
+                                            return (
+                                                <span>
+                                                    {lang === 'en' ? (
+                                                        <i className="fa fa-angle-right    "></i>
+                                                    ) : (
+                                                        <i className="fa fa-angle-left    "></i>
+                                                    )}
+                                                </span>
+                                            );
+                                        }
+                                        return originalElement;
+                                    }}
                                 />
                             </div>
                         </div>
