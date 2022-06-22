@@ -49,17 +49,7 @@ export default function Courses() {
                 {/* <link rel="canonical" href="http://mysite.com/example" /> */}
             </Helmet>
             <section className="courese-page ">
-                <div className="courese-page__header pt-5">
-                    {/* <div className="container">
-                        <span className="main-color fw-bold">
-                            Course category
-                        </span>
-                        <h2 className="mt-3">Web Development</h2>
-                        <div className="courese-page__header__fillter my-5">
-                            <FliterCoures />
-                        </div>
-                    </div> */}
-                </div>
+                <div className="courese-page__header pt-5"></div>
                 <div className="container">
                     <div className="courese-page__content">
                         <div className="row">

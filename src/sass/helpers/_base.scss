@@ -22,3 +22,28 @@ h6 {
 .secondary-color {
     color: $color-secondary
 }
+
+.ant-pagination {
+    .ant-pagination-item {
+        &.ant-pagination-item-active {
+            background-color: $color-primary;
+            border: 1px solid $color-primary;
+            color: $color-white;
+        }
+    }
+
+    .ant-pagination-prev,
+    .ant-pagination-next {
+        border: 1px solid #ddd;
+
+    }
+}
+
+[dir="rtl"] {
+    .ant-pagination {
+
+        .ant-pagination-next {
+            margin: 0 10px;
+        }
+    }
+}
