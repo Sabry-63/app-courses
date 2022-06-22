@@ -2,10 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Radio } from 'antd';
 import axios from 'axios';
 
-export default function FliterCoures({ setCoures, setPage, page, setTotal }) {
+export default function FliterCoures({
+    setCoures,
+    setPage,
+    page,
+    setTotal,
+    setLoadingData,
+}) {
     const [checked, setChecked] = useState('');
 
     useEffect(() => {
+        setLoadingData(true);
         axios
             .get(`/coures?${checked}`, {
                 params: {
@@ -23,6 +30,7 @@ export default function FliterCoures({ setCoures, setPage, page, setTotal }) {
             })
             .then(() => {
                 window.scrollTo({ top: 0 });
+                setLoadingData(false);
             });
     }, [checked, page]);
 

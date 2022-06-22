@@ -19,6 +19,7 @@ export default function Courses() {
 
     useEffect(() => {
         window.scrollTo({ top: 0 });
+        setLoadingData(true);
         axios
             .get('/coures', {
                 params: {
@@ -37,7 +38,7 @@ export default function Courses() {
             })
             .catch((err) => {
                 setErrorData(err);
-                setLoadingData(true);
+                setLoadingData(false);
             });
     }, [page]);
 
@@ -63,6 +64,7 @@ export default function Courses() {
                                         setPage={setPage}
                                         page={page}
                                         setTotal={setTotal}
+                                        setLoadingData={setLoadingData}
                                     />
                                 </div>
                             </div>
