@@ -25,6 +25,8 @@ h6 {
 
 .ant-pagination {
     .ant-pagination-item {
+
+        &:hover,
         &.ant-pagination-item-active {
             background-color: $color-primary;
             border: 1px solid $color-primary;
